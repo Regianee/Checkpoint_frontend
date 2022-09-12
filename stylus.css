@@ -1,0 +1,210 @@
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+body {
+    background-color: #f3ede9;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 554px;
+padding: 30px;
+    align-items: center;
+
+}
+.logo img {
+    width: 340px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+}
+.curiosidades {display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 15px;
+}
+nav {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    width: 100%;
+    height: 330px;
+    gap: 15px;
+}
+.logo nav a {
+
+    min-width: 220px; 
+    padding: 15px;
+    border: 3px solid #3C2313;
+    border-radius: 20px;
+    color: #3C2313;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;}
+
+.Cabeçalho {width: 100%;
+    height: 275px;
+    border: 3px solid  #3C2313;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+background-image: url(farolsantander.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+
+
+.cards {
+    width: 335px;
+    height: 550px;
+padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+    background: #f3ede9;
+    border-radius: 20px;
+    border: 3px solid  #3C2313;
+}
+.cards img {
+    width: 80%;
+    height: 40%;
+    padding-top: 10px;
+    border-radius: 10px 10px;
+}
+
+.cards p {
+    padding: 0px 45px 0px 45px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3C2313;
+}
+
+.cards h1 {
+    width: 70%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #3C2313;
+
+}
+h2 {width: 70%;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+color: #3C2313;}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f3ede9;
+    
+}  
+.videoframe {
+    width: 350px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+    background: #f3ede9;
+    border-radius: 20px;
+    border: 3px solid  #3C2313;
+}
+footer {
+    width: 100%;
+    height: 795px;
+    background: #f3ede9;
+    border: 3px solid #3C2313;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+
+    padding: 80px 0px 80px 0px;
+}
+
+.contatocard > a > img {
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid #3C2313;
+    
+}
+
+.contatocard > a:hover {
+    opacity: 0.5;
+}
+
+.contatocard > h2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 5px;
+}
+@media (min-width:1024px) {.cards {
+    gap: 15px;
+}
+@media (min-width:1024px) {.Cabeçalho{
+    background-size: 100%;
+}
+
+@media (min-width:1024px) {
+    nav {
+        display: flex;
+    flex-direction: row;
+    } 
+    @media (min-width:1024px) {.curiosidades {display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    @media (min-width:1024px){.logo {
+        display: flex;
+        padding-right: 20px;
+        flex-direction: row;
+        width: 420;
+        height: 210px;
+        justify-content: center;
+    }
+@media (min-width:1024px){
+    main {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+}
+@media (min-width:1024px){
+    footer {
+        display: flex;
+        flex-direction: row;
+        height: 414px;
+        justify-content: space-evenly;
+    }
+
+}
+@media (min-width:1024px){
+.contatos {
+    display: flex;
+    flex-direction: row;
+justify-content: space-evenly;}

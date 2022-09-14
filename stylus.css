@@ -1,46 +1,56 @@
 * {box-sizing: border-box;
 margin: 0;
 padding: 0;
-
 }
+
+
 body {
     background-color: #f3ede9;
 }
-.logo {
+.topo {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 554px;
-padding: 30px;
+    height: fit-content;
+    padding: 20px;
     align-items: center;
 
 }
-.logo img {
+.topo img {
     width: 340px;
     height: 140px;
+    
     align-items: center;
     justify-content: center;
     border-radius: 45px;
 }
+
 .curiosidades {display: flex;
-    width: 100%;
+    align-items: center;
+    
     flex-direction: column;
     justify-content: center;
     padding: 30px;
     gap: 15px;
+}
+.titulocuriosidades,.titulovideo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #3C2313;
+
 }
 nav {
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 20px;
     width: 100%;
     height: 330px;
     gap: 15px;
 }
-.logo nav a {
+.topo nav a {
 
     min-width: 220px; 
     padding: 15px;
@@ -82,8 +92,7 @@ padding-top: 15px;
 .cards img {
     width: 80%;
     height: 40%;
-    padding-top: 10px;
-    border-radius: 10px 10px;
+    border-radius: 10px;
 }
 
 .cards p {
@@ -114,39 +123,59 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: #f3ede9;
+    align-items: center;
     
 }  
-.videoframe {
-    width: 350px;
-    height: 550px;
 
-    display: flex;
+
+.video2{display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+
+}
+.Video {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+   
+    margin: 10px;
+    padding: 20px;
     background: #f3ede9;
     border-radius: 20px;
-    border: 3px solid  #3C2313;
+    
 }
-footer {
-    width: 100%;
-    height: 795px;
+.Video iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid  #3C2313;
+
+}
+
+
+.contatos {width: 100%;
+    height: fit-content;
     background: #f3ede9;
     border: 3px solid #3C2313;
-}
-
-.contatos {
     display: flex;
     flex-direction: column;
-    gap: 100px;
     align-items: center;
-
-    padding: 80px 0px 80px 0px;
+    padding: 20px;
+    
+}
+.contatocard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .contatocard > a > img {
-    width: 100px;
+    width: 50px;
     border-radius: 100%;
     border: 5px solid #3C2313;
     
@@ -159,52 +188,48 @@ footer {
 .contatocard > h2 {
     font-family: Comic Sans MS, Comic Sans, cursive;
     text-align: center;
-    font-size: 35px;
+    font-size: 15px;
     padding-top: 5px;
 }
-@media (min-width:1024px) {.cards {
-    gap: 15px;
-}
-@media (min-width:1024px) {.Cabeçalho{
-    background-size: 100%;
-}
-
 @media (min-width:1024px) {
-    nav {
+
+    .topo {
         display: flex;
-    flex-direction: row;
-    } 
-    @media (min-width:1024px) {.curiosidades {display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-    @media (min-width:1024px){.logo {
-        display: flex;
-        padding-right: 20px;
-        flex-direction: row;
-        width: 420;
+        width: 100vw;
         height: 210px;
-        justify-content: center;
-    }
-@media (min-width:1024px){
-    main {
-        display: flex;
-    flex-direction: row;
-    justify-content: center;
-    }
-}
-@media (min-width:1024px){
-    footer {
-        display: flex;
-        flex-direction: row;
-        height: 414px;
         justify-content: space-evenly;
     }
 
-}
-@media (min-width:1024px){
-.contatos {
+    nav {
     display: flex;
     flex-direction: row;
-justify-content: space-evenly;}
+    justify-content: flex-end;
+    padding: 5px;
+    
+    } 
+
+    .curiosidades {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titulocuriosidades{
+        padding-top: 15px;
+    }
+
+    
+    
+    .Video iframe {
+        width: 800px;
+        height: 500px;
+
+    }
+    .contatos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+   
